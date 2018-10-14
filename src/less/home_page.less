@@ -1,0 +1,155 @@
+// ---- NAVBAR ---- //
+.navbar {
+  border-radius: 0;
+  border: 0;
+  height: 60px;
+  margin: 0;
+  background: #272727;
+
+  & > .container-fluid .navbar-brand {
+    margin: 0;
+  }
+
+  .navbar-logo {
+    width: 30px;
+  }
+
+  .navbar-sonar {
+    width: 100px;
+  }
+
+  .navbar-brand {
+    height: 60px;
+  }
+
+  .navbar-info {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+
+    .server {
+      font-weight: 600;
+    }
+
+    .date {
+      font-weight: 600;
+    }
+  }
+
+}
+
+// ---- /NAVBAR ---- //
+// ---- CONTENT ---- //
+.content-title {
+  text-align: center;
+  font-weight: 600;
+}
+
+.new-issues-wrapper,
+.resolved-issues-wrapper {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.new-issues-wrapper {
+
+  span {
+    color: #67b704;
+  }
+}
+
+.resolved-issues-wrapper {
+
+  span {
+    color: #d4333f;
+  }
+}
+
+.table-data {
+  margin-top: 40px;
+  border: 2px solid #e6eaee;
+  background: #f9fafb;
+  font-weight: 600;
+
+  th {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.data-icon {
+  width: 15px;
+}
+
+.data-rule {
+  padding-left: 0 !important;
+}
+
+.glyphicon.glyphicon-upload {
+  color: #d4333f;
+  padding-top: 2px;
+}
+
+.glyphicon.glyphicon-download {
+  color: #67b704;
+  padding-top: 2px;
+}
+
+
+.filter-wrapper {
+  margin-top: 50px;
+}
+
+.file-wrapper {
+  margin-top: 30px;
+  border: 2px solid #e6eaee;
+
+  .file-name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    background: #EBEBEB;
+
+    i {
+      margin-left: 5px;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+
+      &:hover {
+        color: #120a0f;
+      }
+    }
+  }
+
+  .file-issue {
+    background: #fff;
+    margin: 20px;
+    border: 2px solid #e6eaee;
+
+    .issue {
+      border: 2px solid #e6eaee;
+      background: #E3EBF3;
+
+      i {
+        margin-left: 5px;
+      }
+
+      .rulename {
+        font-weight: 600;
+      }
+    }
+
+    .description {
+      padding: 5px;
+      margin-left: 25px;
+    }
+  }
+}
+// ---- /CONTENT ---- //

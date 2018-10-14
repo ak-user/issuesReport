@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rebuild Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="/css/vendor.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <!--HEADER-->
+    <header class="header">
+        <nav id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand pull-left" href="#">
+                    <img class="navbar-logo" src="images/logo.png"/>
+                </a>
+                <a class="navbar-brand pull-right" href="#">
+                    <img class="navbar-sonar" src="images/sonarqube-24x100.png"/>
+                </a>
+                <h2 class="navbar-info">
+                    <span class="server">Registry-Trunk</span>
+                    <span class="date">Oct 10, 2018 11:33:51 AM</span>
+                </h2>
+            </div>
+        </nav>
+    </header>
+    <!--/HEADER-->
+    <main class="content">
+        <section class="section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 class="content-title">Issues Report</h1>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="new-issues-wrapper">
+                            <h3>New issues: <span>6</span></h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="resolved-issues-wrapper">
+                            <h3>Resolved issues: <span>33491</span></h3>
+
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <table class="table table-hover table-data">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>Issues per Rule</th>
+                                <th>New issues</th>
+                                <th>Resolved issues</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="danger">
+                                <td class="data-icon">
+                                    <i class="glyphicon glyphicon-upload"></i>
+                                </td>
+                                <td class="data-rule">Expressions should not be too complex</td>
+                                <td>1</td>
+                                <td>11</td>
+                            </tr>
+                            <tr class="danger">
+                                <td class="data-icon">
+                                    <i class="glyphicon glyphicon-upload"></i>
+                                </td>
+                                <td class="data-rule">Trailing commas should not be used</td>
+                                <td>1</td>
+                                <td>24</td>
+                            </tr>
+                            <tr class="success">
+                                <td class="data-icon">
+                                    <i class="glyphicon glyphicon-download"></i>
+                                </td>
+                                <td class="data-rule">Lines should not be too long</td>
+                                <td>1</td>
+                                <td>564164</td>
+                            </tr>
+                            <tr class="danger">
+                                <td class="data-icon">
+                                    <i class="glyphicon glyphicon-upload"></i>
+                                </td>
+                                <td class="data-rule">Expressions should not be too complex</td>
+                                <td>1</td>
+                                <td>11</td>
+                            </tr>
+                            <tr class="danger">
+                                <td class="data-icon">
+                                    <i class="glyphicon glyphicon-upload"></i>
+                                </td>
+                                <td class="data-rule">Lines should not be too long</td>
+                                <td>1</td>
+                                <td>564164</td>
+                            </tr>
+                            <tr class="success">
+                                <td class="data-icon">
+                                    <i class="glyphicon glyphicon-download"></i>
+                                </td>
+                                <td class="data-rule">Lines should not be too long</td>
+                                <td>1</td>
+                                <td>564164</td>
+                            </tr>
+                            <tr class="danger">
+                                <td class="data-icon">
+                                    <i class="glyphicon glyphicon-upload"></i>
+                                </td>
+                                <td class="data-rule">Trailing commas should not be used</td>
+                                <td>1</td>
+                                <td>24</td>
+                            </tr>
+                            <tr class="danger">
+                                <td class="data-icon">
+                                    <i class="glyphicon glyphicon-upload"></i>
+                                </td>
+                                <td class="data-rule">Performance - Method converts String to boxed primitive using
+                                    excessive boxing
+                                </td>
+                                <td>11</td>
+                                <td>21</td>
+                            </tr>
+                            <tr class="danger">
+                                <td class="data-icon">
+                                    <i class="glyphicon glyphicon-upload"></i>
+                                </td>
+                                <td class="data-rule">Expressions should not be too complex</td>
+                                <td>1</td>
+                                <td>11</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="filter-wrapper">
+                            <label for="rule-filter" >Only NEW issues</label>
+                            <select class="form-control" id="rule-filter">
+                                <option value="" selected="">Filter by:</option>
+                                <optgroup label="Severity">
+                                    <option value="info">Info (5)</option>
+                                    <option value="major">Major (1)</option>
+                                </optgroup>
+                                <optgroup label="Rule">
+                                    <option value="Rsquid:S1448">Classes should not have too many methods (1)</option>
+                                    <option value="Rjavascript:S1067">Expressions should not be too complex (1)</option>
+                                    <option value="Rsquid:S00103">Lines should not be too long (1)</option>
+                                    <option value="Rfb-contrib:NAB_NEEDLESS_BOXING_VALUEOF">Performance - Method converts String to boxed primitive using excessive boxing (1)</option>
+                                    <option value="Rsquid:S3578">Test methods should comply with a naming convention (1)</option>
+                                    <option value="Rjavascript:TrailingComma">Trailing commas should not be used (1)</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="file-wrapper">
+                            <div class="file-name">
+                                <i class="glyphicon glyphicon-file"></i>
+                                <a href="#">QpsFilter.java</a>
+                            </div>
+                            <div class="file-issue">
+                                <div class="issue">
+                                    <i class="glyphicon glyphicon-download"></i>
+                                    <span class="rulename">Method com.wellcentive.registry.qps.QpsFilter.getPhysicianOrganizationsAsSet() converts String to boxed primitive using excessive boxing</span>
+                                </div>
+                                <div class="description">
+                                    Performance - Method converts String to boxed primitive using excessive boxing
+                                </div>
+                            </div>
+                            <div class="file-issue">
+                                <div class="issue">
+                                    <i class="glyphicon glyphicon-download"></i>
+                                    <span class="rulename">Method com.wellcentive.registry.qps.QpsFilter.getPhysicianOrganizationsAsSet() converts String to boxed primitive using excessive boxing</span>
+                                </div>
+                                <div class="description">
+                                    Performance - Method converts String to boxed primitive using excessive boxing
+                                </div>
+                            </div>
+                            <div class="file-issue">
+                                <div class="issue">
+                                    <i class="glyphicon glyphicon-download"></i>
+                                    <span class="rulename">Method com.wellcentive.registry.qps.QpsFilter.getPhysicianOrganizationsAsSet() converts String to boxed primitive using excessive boxing</span>
+                                </div>
+                                <div class="description">
+                                    Performance - Method converts String to boxed primitive using excessive boxing
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-wrapper">
+                            <div class="file-name">
+                                <i class="glyphicon glyphicon-file"></i>
+                                <a href="#">QpsFilter.java</a>
+                            </div>
+                            <div class="file-issue">
+                                <div class="issue">
+                                    <i class="glyphicon glyphicon-download"></i>
+                                    <span class="rulename">Method com.wellcentive.registry.qps.QpsFilter.getPhysicianOrganizationsAsSet() converts String to boxed primitive using excessive boxing</span>
+                                </div>
+                                <div class="description">
+                                    Performance - Method converts String to boxed primitive using excessive boxing
+                                </div>
+                            </div>
+                            <div class="file-issue">
+                                <div class="issue">
+                                    <i class="glyphicon glyphicon-download"></i>
+                                    <span class="rulename">Method com.wellcentive.registry.qps.QpsFilter.getPhysicianOrganizationsAsSet() converts String to boxed primitive using excessive boxing</span>
+                                </div>
+                                <div class="description">
+                                    Performance - Method converts String to boxed primitive using excessive boxing
+                                </div>
+                            </div>
+                            <div class="file-issue">
+                                <div class="issue">
+                                    <i class="glyphicon glyphicon-upload"></i>
+                                    <span class="rulename">Method com.wellcentive.registry.qps.QpsFilter.getPhysicianOrganizationsAsSet() converts String to boxed primitive using excessive boxing</span>
+                                </div>
+                                <div class="description">
+                                    Performance - Method converts String to boxed primitive using excessive boxing
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-wrapper">
+                            <div class="file-name">
+                                <i class="glyphicon glyphicon-file"></i>
+                                <a href="#">QpsFilter.java</a>
+                            </div>
+                            <div class="file-issue">
+                                <div class="issue">
+                                    <i class="glyphicon glyphicon-download"></i>
+                                    <span class="rulename">Method com.wellcentive.registry.qps.QpsFilter.getPhysicianOrganizationsAsSet() converts String to boxed primitive using excessive boxing</span>
+                                </div>
+                                <div class="description">
+                                    Performance - Method converts String to boxed primitive using excessive boxing
+                                </div>
+                            </div>
+                            <div class="file-issue">
+                                <div class="issue">
+                                    <i class="glyphicon glyphicon-download"></i>
+                                    <span class="rulename">Method com.wellcentive.registry.qps.QpsFilter.getPhysicianOrganizationsAsSet() converts String to boxed primitive using excessive boxing</span>
+                                </div>
+                                <div class="description">
+                                    Performance - Method converts String to boxed primitive using excessive boxing
+                                </div>
+                            </div>
+                            <div class="file-issue">
+                                <div class="issue">
+                                    <i class="glyphicon glyphicon-download"></i>
+                                    <span class="rulename">Method com.wellcentive.registry.qps.QpsFilter.getPhysicianOrganizationsAsSet() converts String to boxed primitive using excessive boxing</span>
+                                </div>
+                                <div class="description">
+                                    Performance - Method converts String to boxed primitive using excessive boxing
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<!--FOOTER-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <span>&#169; V.I.Tech 2018</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--/FOOTER-->
+<script src="/js/vendor.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "Web project for building company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Kopchak",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-fontmin": "^0.7.4",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.0.1",
+    "gulp-util": "^3.0.8"
+  }
+}
